@@ -31,8 +31,7 @@ io.on('connection', function (socket) {
 
   socket.on('evento', (res) => {
     // Emite el mensaje a todos lo miembros de las sala menos a la persona que envia el mensaje   
-    socket.to(nameRoom).emit('evento', res)
-    // socket.broadcast.to(nameRoom).emit('evento', res)
+    socket.to(nameRoom).emit('evento', res);
 
   })
 
